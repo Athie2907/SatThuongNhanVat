@@ -76,7 +76,6 @@ public:
 
     friend istream& operator>>(istream& is, Sung& s) {
         cout << "Nhap ten sung: "; 
-        cin.ignore();
 		getline(is, s.ten );
 		
         cout << "Nhap sat thuong co ban: "; is >> s.satThuongCB;
@@ -122,7 +121,6 @@ public:
 
     friend istream& operator>>(istream& is, Kiem& k) {
         cout << "Nhap ten kiem: ";
-		cin.ignore();
 		getline(is, k.ten);
 		
         cout << "Nhap sat thuong co ban: "; is >> k.satThuongCB;
@@ -189,7 +187,6 @@ public:
 
     friend istream& operator>>(istream& is, PhepThuat& p) {
         cout << "Nhap ten phep: "; 
-        cin.ignore();
 		getline(is, p.ten);
 		
         cout << "Nhap sat thuong co ban: "; is >> p.satThuongCB;
